@@ -19,7 +19,7 @@ export default {
     projectDescriptionFly: "Landing Page aún en desarrollo, para una empresa que ofrece servicios como inmobiliaria y agencia de viajes a la vez. Creada con Html, Css y Javascript",
     projectDescriptionKat: "Página Web realizada como presentación de Proyecto Final para el curso de React.Js. Se trata de un E-commerce para una tienda ficticia dediada a la venta de bijouteri. Creada con React.Js y Sass",
     projectDescriptionMic: "Landing Page realizada como presentación de Proyecto Final para el curso de Javascript. Se trata de un E-commerce ficticio para una empresa que ofrece servicios de IT. Creada con Html, Bootstrap y Javascript.",
-    projectDescriptionInd: "Landing Page desarrollada para una empresa de venta ded paneles solares. Creada con Html, Bootstrap y Javascript.",
+    projectDescriptionInd: "Landing Page desarrollada para una empresa de venta de paneles solares. Creada con Html, Bootstrap y Javascript.",
     webDev: "Desarrolladora Front-End",
     devDate: "Diciembre 2021 - Actualidad",
     devDescription: "Maquetado, diseño y producción de páginas webs, creando sitios personalizados y optimizando su rendimiento. Utilizo tecnologías como HTML, CSS, JavaScript y frameworks como Bootstrap y React. Mi enfoque es crear sitios web personalizados que se adapten a las necesidades y objetivos específicos de cada cliente.",
