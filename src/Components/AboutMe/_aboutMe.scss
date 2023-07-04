@@ -1,0 +1,128 @@
+@import '../../Styles/mixins';
+
+#aboutMe {
+    @include flex-jAround;
+    margin-bottom: 10em;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 10em;
+     }
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 8em;
+     }
+     @media screen and (max-width: 576px) {
+        margin-bottom: 6em;
+    }
+
+    .presentation {
+        line-height: 5em;
+        margin-left: 3.5em;
+        margin-top: 10em;
+        width: 45%;
+
+        &.animate__animated {
+            animation-duration: 13s;
+        }
+
+        @media screen and (max-width: 1200px) {
+            line-height: 5em;
+            margin-left: 2.5em;
+            margin-top: 9em;
+            width: 50%;
+        }
+        @media screen and (max-width: 992px) {
+            line-height: 4.25em;
+            margin-left: 1em;
+            margin-top: 8rem;
+            width: 55%;
+        }
+        @media screen and (max-width: 820px) {
+            @include basic-flex;
+            flex-direction: column;
+            line-height: 3.5em;
+            margin-left: 0;
+            margin-top: 5.5em;
+            width: 100vw;
+        }
+        @media screen and (max-width: 576px) {
+            line-height: 3em;
+        }
+        
+        h3 {
+            color: $seconday-color;
+            font-size: 2.25em;
+            font-weight: 400;
+            letter-spacing: .063em;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 2.125em;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 1.875em;
+            }
+            @media screen and (max-width: 820px) {
+                font-size: 1.75em;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 1.5em;
+            }
+
+            .name {
+                color: $color-accent;
+                font-size: 1.25em;
+                font-weight: 500;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 1em;
+                }  
+            }
+        }
+
+        .resalt {
+            color: $color-accent;
+            font-weight: 500;
+        }
+
+        .no-resalt {
+            color: $seconday-color;
+        }
+    }
+
+    .description {
+        color: $seconday-color;
+        font-size: 1.063em;
+        line-height: 1.688em;
+        margin-right: 3.5em;
+        margin-top: 9em;
+        text-align: center;
+        width: 40%;
+
+        &.animate__animated {
+            animation-duration: 4s;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: .938em;
+            margin-right: 2em;
+            margin-top: 10em;
+            width: 45%;
+        }
+
+        @media screen and (max-width: 992px) {
+            font-size: .875em;
+            line-height: 1.625em;
+            margin-right: 1em;
+            margin-top: 8.75em;
+        }
+        @media screen and (max-width: 820px) {
+            margin: 2.75em 0.25em 0 0.25em;
+            width: 95%;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: .75em;
+            width: 90%;
+        }
+    }
+}

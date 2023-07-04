@@ -1,0 +1,70 @@
+@mixin basic-flex {
+    align-items: center;
+    display: flex;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin title-font {
+    color: $seconday-color;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    margin-bottom: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+        color:$color-accent;
+    }
+    @media screen and (max-width: 992px) {
+         margin-bottom: 1.5em;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.75em;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 1.5em;
+    }
+}
+
+@mixin flex-jAround {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin flex-jBetw {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin links {
+    color: $seconday-color;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &:hover, &.active, &:focus-visible {
+        color: $color-accent;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+}
+
+@mixin buttons {
+    background-color: $color-accent;
+    border: none;
+    border-radius: 50%;
+    color: $main-color;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover, &.bActive {
+        background-color: $color-accent2;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+}
