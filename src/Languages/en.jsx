@@ -30,6 +30,7 @@ export default {
     certificateReact: "React.Js course certificate",
     certificateJs: "Javascript Course Certificate",
     certificateDev: "Web Development Course Certificate",
+    certificateIntro: "Introduction to Programming Certificate",
     footerOne: "Page developed with React.Js and designed with Sass",
     footerTwo:"Developed and designed by © Luna Rico | 2023"
   }

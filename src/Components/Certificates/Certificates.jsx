@@ -13,6 +13,7 @@ import front from "../../assets/certificates/front.png"
 import dw from "../../assets/certificates/dw.png"
 import js from "../../assets/certificates/js.png"
 import react from "../../assets/certificates/react.png"
+import intro from "../../assets/certificates/intro.png"
 
 import '../Certificates/_certificates.scss'
 
@@ -31,7 +32,9 @@ export const Certificates = () => {
         description: trans.certificateJs}
         ,
         {img: dw,
-        description: trans.certificateDev}
+        description: trans.certificateDev},
+        {img: intro,
+            description: trans.certificateIntro}
     ]
 
     const [isCertOpen, setIsCertOpen] = useState(false)
