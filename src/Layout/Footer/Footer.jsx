@@ -32,10 +32,7 @@ export const Footer = () => {
                         <i><PlaceIcon/></i>
                         <p>Capital Federal, Buenos Aires, Argentina.</p>
                     </span>
-                    <span>
-                        <i><LocalPhoneIcon/></i>
-                        <p>+54 911 22539441</p>
-                    </span>
+
                     <span>
                         <i><MailOutlineIcon/></i>
                         <p>lunarico93@gmail.com</p>
