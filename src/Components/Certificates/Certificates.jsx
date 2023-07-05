@@ -1,49 +1,55 @@
-import LanguageContext from '../../Context/LanguageContext';
-import React, { useContext, useState } from 'react';
+import React, { useRef, useContext, useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination } from 'swiper';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {Swiper, SwiperSlide} from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
-import "swiper/css"
+import LanguageContext from '../../Context/LanguageContext';
+import "swiper/css";
 import "swiper/css/effect-coverflow";
 import 'swiper/css/pagination';
 
-import front from "../../assets/certificates/front.png"
-import dw from "../../assets/certificates/dw.png"
-import js from "../../assets/certificates/js.png"
-import react from "../../assets/certificates/react.png"
-import intro from "../../assets/certificates/intro.png"
+import front from "../../assets/certificates/front.png";
+import dw from "../../assets/certificates/dw.png";
+import js from "../../assets/certificates/js.png";
+import react from "../../assets/certificates/react.png";
+import intro from "../../assets/certificates/intro.png";
 
-import '../Certificates/_certificates.scss'
+import '../Certificates/_certificates.scss';
 
 export const Certificates = () => {
 
     const { trans } = useContext(LanguageContext);
 
     const certificates =  [
-        {img: front, 
-        description: trans.certificateFront}
-        ,
-        {img: react,
-        description: trans.certificateReact}
-        ,
-        {img: js,
-        description: trans.certificateJs}
-        ,
-        {img: dw,
-        description: trans.certificateDev},
-        {img: intro,
-            description: trans.certificateIntro}
+        {img: front, description: trans.certificateFront},
+        {img: react, description: trans.certificateReact},
+        {img: js, description: trans.certificateJs},
+        {img: dw, description: trans.certificateDev},
+        {img: intro,description: trans.certificateIntro}
     ]
 
     const [isCertOpen, setIsCertOpen] = useState(false)
     const [certContent, setCertContent] = useState([])
+    const imgRef = useRef(null);
 
-    const changeContent = (cer) => {
+    const openCert = (cer) => {
         setCertContent([cer])
         setIsCertOpen(true)
     }
+
+    useEffect(() => {
+        const clickOutside = (event) => {
+          if (!imgRef.current.contains(event.target)) {
+            setIsCertOpen(false);
+          }
+        };
+        document.addEventListener('mousedown', clickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', clickOutside);
+        };
+    }, []);
 
     return (
         <section id="certificates">
@@ -64,14 +70,14 @@ export const Certificates = () => {
                 className="mySwiper"> 
                 {certificates.map ((cer) => 
                     <SwiperSlide>
-                        <button onClick={() => changeContent(cer)}>
+                        <button onClick={() => openCert(cer)}>
                             <img src={cer.img} alt={cer.description}></img>
                         </button>
                     </SwiperSlide>)}
             </Swiper>
             <div className={!isCertOpen ? 'certClose' : "certOpen"}>
                 <FontAwesomeIcon icon={faTimes} onClick={() => setIsCertOpen(false)} className='closeCert'/>
-                {certContent.map ((cert) => <img src={cert.img} className='imgCertOpen' alt={cert.description}></img>)}
+                {certContent.map ((cert) => <img ref={imgRef} src={cert.img} className='imgCertOpen' alt={cert.description}></img>)}
             </div>
         </section>
     )
