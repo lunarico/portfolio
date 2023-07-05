@@ -40,7 +40,7 @@ export const Certificates = () => {
 
     useEffect(() => {
         const clickOutside = (event) => {
-          if (!imgRef.current.contains(event.target)) {
+          if (imgRef.current && !imgRef.current.contains(event.target)) {
             setIsCertOpen(false);
           }
         };
