@@ -42,7 +42,11 @@ export const Skills= () => {
         {img: git,
         name: 'git'},
         {img: github,
-        name: 'github'},,,
+        name: 'github'},
+        {img: node,
+        name: 'node'},
+        {img: photoshop,
+        name: 'photoshop'},
         {img: illustrator,
         name: 'illustrator'}
     ];
