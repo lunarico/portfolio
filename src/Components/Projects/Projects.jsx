@@ -29,7 +29,7 @@ export const Projects = () => {
         {title: 'Katmandú',
         type: trans.fictionP,
         description: trans.projectDescriptionKat,
-        link: 'https://lunarico.github.io/katmandu-lunarico/',
+        link: 'https://katmandu.netlify.app/',
         image: katmandu,
         id: 2}
     ,
