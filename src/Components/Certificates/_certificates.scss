@@ -58,9 +58,8 @@
         }
 
         .swiper-pagination-bullet {
-             background: $seconday-color;
+             background: white;
              margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
-             opacity: 0;
         }
 
         .swiper-pagination-bullet-active {
