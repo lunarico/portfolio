@@ -17,26 +17,36 @@
     }
 
     .skills-container {
+
         @include flex-jAround;
         justify-self: center;
         flex-wrap: wrap;
-        margin: 0 5em;
+        margin: 0;
         width: 70%;
 
+        @media (max-width: 1578px) {
+            width: 60%;
+        }
+
         @media (max-width: 1200px) {
-            margin: 0 2em;
-            width: 80%;
+            width: 70%;
         }
+
         @media (max-width: 992px) {
-            width: 90%;
+            width: 75%;
         }
+
+        @media (max-width: 768px) {
+            width: 85%;
+        }
+
 
         .icon-container {
             background: $main-color;
             border-radius: 20px;
             display: grid;
             height: 9.5em;
-            margin: 1em 1.5em 4em 1.5em;
+            margin: 1em 1em 4em 1em;
             padding: 1.5em;
             position: relative;
             width: 9.5em;
@@ -85,30 +95,43 @@
                 }
             }
 
-            @media (min-width: 1428px) {
-                margin: 1em 2em 4em 2em;
+            @media (max-width: 1578px) {
+                margin: 1em 1.25em 4em 1.25em;
             }
-
-            @media (max-width: 1200px) {
-                margin: 1em 1.375em 4em 1.375em;
-            }
-            @media (max-width: 992px) {
-                margin: 1em 1.25em 3.5em 1.25em;
-                height: 8.75em;
-                width: 8.75em;
+            @media (max-width: 1280px) {
+                height: 8.5em;
+                margin: 1em .625em 4em .625em;
+                padding: 1.25em;
+                width: 8.5em;
                 &::after {
-                    height: 9.25em;
-                    width: 9.25em;
+                    height: 9em;
+                    width: 9em;
                 }
             }
-            @media (max-width: 820px) {
-                margin: 1em 1em 2.25em 1em;
-                height: 7.5em;
-                padding: 1.25em;
-                width: 7.5em;
+            @media (max-width: 1200px) {
+                margin: 1em 1em 4em 1em;
+            }
+            @media (max-width: 992px) {
+                height: 7.25em;
+                margin: 1em 1.25em 4em 1.25em;
+                padding: 1.125em;
+                width: 7.25em;
                 &::after {
-                    height: 8em;
-                    width: 8em;
+                    height: 7.75em;
+                    width: 7.75em;
+                }
+            }
+            @media (max-width: 830px) {
+                margin: 1em .75em 4em .75em;
+            }
+            @media (max-width: 768px) {
+                margin: 1em .75em 2.25em .75em;
+                height: 6.5em;
+                padding: 1em;
+                width: 6.5em;
+                &::after {
+                    height: 7em;
+                    width: 7em;
                 }
             }
             @media (max-width: 576px) {
@@ -122,23 +145,22 @@
                 }
             }
             
-
             .icon {
                 height: 6.5em;
                 justify-self: center;
                 width: 6.5em;
 
-                @media (max-width: 1200px) {
-                    height: 6.25em;
-                    width: 6.25em;
-                }
-                @media (max-width: 992px) {
+                @media (max-width: 1280px) {
                     height: 5.75em;
                     width: 5.75em;
                 }
-                @media (max-width: 820px) {
-                    height: 4.75em;
-                    width: 4.75em;
+                @media (max-width: 992px) {
+                    height: 5em;
+                    width: 5em;
+                }
+                @media (max-width: 768px) {
+                    height: 4.25em;
+                    width: 4.25em;
                 }
                 @media (max-width: 576px) {
                     height: 4.125em;
