@@ -60,6 +60,7 @@
         .swiper-pagination-bullet {
              background: $seconday-color;
              margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+             opacity: 0;
         }
 
         .swiper-pagination-bullet-active {
