@@ -57,6 +57,11 @@
             }
         }
 
+        .swiper-pagination-bullet {
+             background: $seconday-color;
+             margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+        }
+
         .swiper-pagination-bullet-active {
             background: $color-accent2;
         } 
