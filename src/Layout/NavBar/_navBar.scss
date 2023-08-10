@@ -36,7 +36,7 @@
                 a {
                     @include links;
                     color: $color-accent;
-                    font-size: .938em;
+                    font-size: 1em;
                     font-weight: 500;
                     text-transform: uppercase;
 
@@ -44,6 +44,9 @@
                         color: $color-accent2;
                     }
 
+                    @media screen and (max-width: 1400px) {
+                        font-size: .938em;
+                    }
                     @media screen and (max-width: 992px) {
                         font-size: .875em;
                     }
