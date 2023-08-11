@@ -5,6 +5,9 @@
 
     margin: 0 9em 11em 9em;
 
+    @media (max-width: 1715px) {
+        margin-bottom: 8em;
+    }
     @media screen and (max-width: 1400px) {
        margin: 0 4em 5em 4em;
      }

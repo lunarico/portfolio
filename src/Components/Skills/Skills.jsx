@@ -13,6 +13,7 @@ import sass from '../../assets/icons/sass.png'
 import git from '../../assets/icons/git.png'
 import github from '../../assets/icons/github.png'
 import node from '../../assets/icons/node.png'
+import firebase from '../../assets/icons/firebase.png'
 import photoshop from '../../assets/icons/photoshop.png'
 import illustrator from '../../assets/icons/illustrator.png'
 
@@ -43,8 +44,8 @@ export const Skills= () => {
         name: 'git'},
         {img: github,
         name: 'github'},
-        {img: node,
-        name: 'node'},
+        {img: firebase,
+        name: 'firebase'},
         {img: photoshop,
         name: 'photoshop'},
         {img: illustrator,
