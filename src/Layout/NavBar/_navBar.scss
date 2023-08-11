@@ -8,10 +8,6 @@
         width: 100vw;
         z-index: 2;
 
-        @media screen and (max-width: 820px) {
-            height: 3em;
-        }
-
         ul {
             @include flex-jAround;
             left: 20%;
@@ -86,7 +82,6 @@
 
             @media screen and (max-width: 820px) {
                 position: absolute;
-                top:20%;
 
                 &.lang-none {
                     display: none;

@@ -41,13 +41,14 @@
         }
         @media screen and (max-width: 992px) {
             line-height: 4.25em;
+            margin-top: 8em;
             width: 55%;
         }
         @media screen and (max-width: 820px) {
             @include basic-flex;
             flex-direction: column;
             line-height: 3.5em;
-            margin: 5.5em 0 0 0;
+            margin: 5.5em 0 1.25em 0;
             width: 100vw;
         }
         @media screen and (max-width: 576px) {
@@ -121,11 +122,12 @@
             margin-top: 8.75em;
         }
         @media screen and (max-width: 820px) {
-            margin: 2.75em 0;
+            margin: 3em 0 2.75em 0;
             width: 95%;
         }
         @media screen and (max-width: 576px) {
             font-size: .75em; 
+            margin-top: 3.5em;
         }
     }
 }
