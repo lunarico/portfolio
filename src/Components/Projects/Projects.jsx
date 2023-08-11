@@ -22,7 +22,7 @@ export const Projects = () => {
         {title: 'Fly and Buy',
         type: trans.realP,
         description: trans.projectDescriptionFly,
-        link: 'https://lunarico.github.io/flyandbuy.github.io/',
+        link: 'https://flyandbuy2.netlify.app/',
         image: flyAndBuy,
         id: 1,}
     ,

@@ -6,11 +6,9 @@
     @media (max-width: 992px) {
         margin-bottom: 7.5em;
     }
-
     @media (max-width: 820px) {
         margin-bottom: 6em;
     }
-
     @media (max-width: 576px) {
         margin-bottom: 4em;
     }
@@ -23,13 +21,13 @@
         @include flex-jAround;
         align-content: space-between;
         flex-wrap: wrap;
-        margin: 4.75em 3em 3em 3em;
+        margin: 4.75em 7em 3em 7em;
 
         @media (max-width: 992px) {
-            margin: 3.5em 1.75em;
+            margin: 3.5em;
         }
         @media (max-width: 768px) {
-            margin: 3em 1em;
+            margin: 3em;
         }
         @media (max-width: 576px) {
             margin: 2.25em 1em;
@@ -39,13 +37,15 @@
             color: $main-color;
             display: flex;
             justify-content: center;
-            margin-bottom: 2.5em;
+            margin-bottom: 3em;
             overflow: hidden;
             position: relative;
-            width: 47%;
-    
-            @media (max-width: 820px) {
+            width: 45%;
+
+            @media (max-width: 992px) {
                 margin-bottom: 2em;
+            }
+            @media (max-width: 820px) {
                 width: 90%;
             }
 
@@ -109,7 +109,6 @@
                     @media (max-width: 576px) {
                         font-size: .875em;
                     }
-        
                 }
 
                 h4 {
