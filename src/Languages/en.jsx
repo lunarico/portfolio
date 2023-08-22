@@ -16,7 +16,7 @@ export default {
     realP: "Real Project",
     fictionP: "Fiction Project",
     visit:"Visit",
-    projectDescriptionFly: "Landing Page still under development, for a company that offers services as a real estate and travel agency at the same time. Builder with Html, Css and Javascript.",
+    projectDescriptionFly: "Website developed and designed for a company that offers Real Estate and tourism services at the same time. Built with Html, Css and Javascript.",
     projectDescriptionKat: "Website developed as a Final Project presentation for the React.Js course. It is an E-commerce for a fictitious store dedicated to the sale of bijouteri. Builder with React.Js and Sass.",
     projectDescriptionMic: "Landing Page developed as a Final Project presentation for the Javascript course. It is a fictitious E-commerce for a company that offers IT services. Builder with Html, Bootstrap and Javascript.",
     projectDescriptionInd: "Landing Page developed for a company specialized in selling solar panels. Builder with Html, Bootstrap and Javascript.",

@@ -22,7 +22,7 @@ export const Projects = () => {
         {title: 'Fly and Buy',
         type: trans.realP,
         description: trans.projectDescriptionFly,
-        link: 'https://flyandbuy2.netlify.app/',
+        link: 'https://flyandbuyar.com/',
         image: flyAndBuy,
         id: 1,}
     ,
