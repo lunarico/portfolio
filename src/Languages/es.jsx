@@ -17,7 +17,7 @@ export default {
     fictionP: "Proyecto Ficticio",
     visit: "Visitar",
     projectDescriptionFly: "Página Web desarrollada y diseñada para una empresa que ofrece servicios de Real Estate y turismo a la vez. Creada con Html, Css y Javascript",
-    projectDescriptionKat: "Página Web realizada como presentación de Proyecto Final para el curso de React.Js. Se trata de un E-commerce para una tienda ficticia dediada a la venta de bijouteri. Creada con React.Js y Sass",
+    projectDescriptionKat: "Página Web realizada como presentación de Proyecto Final para el curso de React.Js. Se trata de un E-commerce para una tienda ficticia dediada a la venta de bijouteri. Creada con React.Js, Sass y Firebase para la base de datos",
     projectDescriptionMic: "Landing Page realizada como presentación de Proyecto Final para el curso de Javascript. Se trata de un E-commerce ficticio para una empresa que ofrece servicios de IT. Creada con Html, Bootstrap y Javascript.",
     projectDescriptionInd: "Landing Page desarrollada para una empresa de venta de paneles solares. Creada con Html, Bootstrap y Javascript.",
     webDev: "Desarrolladora Front-End",
