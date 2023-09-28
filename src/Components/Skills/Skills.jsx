@@ -16,6 +16,7 @@ import node from '../../assets/icons/node.png'
 import firebase from '../../assets/icons/firebase.png'
 import photoshop from '../../assets/icons/photoshop.png'
 import illustrator from '../../assets/icons/illustrator.png'
+import figma from '../../assets/icons/figma.png'
 
 export const Skills= () => {
     
@@ -46,8 +47,8 @@ export const Skills= () => {
         name: 'github'},
         {img: firebase,
         name: 'firebase'},
-        {img: photoshop,
-        name: 'photoshop'},
+        {img: figma,
+        name: 'figma'},
         {img: illustrator,
         name: 'illustrator'}
     ];
