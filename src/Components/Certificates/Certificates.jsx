@@ -14,6 +14,7 @@ import dw from "../../assets/certificates/dw.png";
 import js from "../../assets/certificates/js.png";
 import react from "../../assets/certificates/react.png";
 import intro from "../../assets/certificates/intro.png";
+import uxui from "../../assets/certificates/uxui.png"
 
 import '../Certificates/_certificates.scss';
 
@@ -22,6 +23,7 @@ export const Certificates = () => {
     const { trans } = useContext(LanguageContext);
 
     const certificates =  [
+        {img: uxui, description: trans.certificateUxui},
         {img: front, description: trans.certificateFront},
         {img: react, description: trans.certificateReact},
         {img: js, description: trans.certificateJs},

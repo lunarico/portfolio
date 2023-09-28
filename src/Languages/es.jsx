@@ -11,7 +11,7 @@ export default {
     dev: 'Desarrolladora ',
     front: 'Front-End',
     resume: 'Currículum',
-    textAbout: 'Soy una apasionada por la tecnología y el desarrollo web, con habilidades en la creación de interfaces de usuario utilizando herramientas como HTML, CSS, JavaScript y React.js. He trabajado en proyectos particulares como freelancer, lo que me ha permitido desarrollar habilidades técnicas y adquirir experiencia práctica. Además, comparto mis conocimientos como tutora en cursos de programación. Actualmente, me encuentro estudiando Diseño UX/UI, para profundizar mi comprensión de la experiencia del usuario y la estética visual. Soy creativa, comprometida y con una gran capacidad de iniciativa. Si deseas conocer más sobre mi experiencia laboral y habilidades técnicas, te invito a revisar mi portfolio o a contactarme directamente.',
+    textAbout: 'Soy una apasionada por la tecnología y el desarrollo web, con habilidades en la creación de interfaces de usuario utilizando herramientas como HTML, CSS, JavaScript y React.js. He trabajado en proyectos particulares como freelancer, lo que me ha permitido desarrollar habilidades técnicas y adquirir experiencia práctica. Además, comparto mis conocimientos como tutora en cursos de programación. Cuento con conocimientos en Diseño UX/UI, lo que me aporta una comprensión profunda de la experiencia del usuario y la estética visual. Soy creativa, comprometida y con una gran capacidad de iniciativa. Si deseas conocer más sobre mi experiencia laboral y habilidades técnicas, te invito a revisar mi portfolio o a contactarme directamente.',
     myProjects: "Mis proyectos",
     realP: "Proyecto Real",
     fictionP: "Proyecto Ficticio",

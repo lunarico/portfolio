@@ -11,7 +11,7 @@ export default {
     dev: 'Front-End ',
     front: 'Developer',
     resume: 'Resume',
-    textAbout: "I'm passionate about technology and web development, with skills in creating user interfaces for websites using tools like HTML, CSS, JavaScript, and React.Js. I have worked on personal projects as a freelancer, which has allowed me to develop technical skills and gain practical experience. I also share my knowledge as a tutor in programming courses. Currently, I am studying UX/UI Design to deepen my understanding of user experience and visual aesthetics. I am a creative, committed and highly dynamic person. If you want to learn more about my work experience or technical skills, I invite you to look through my portfolio or contact me directly.", 
+    textAbout: "I'm passionate about technology and web development, with skills in creating user interfaces for websites using tools like HTML, CSS, JavaScript, and React.Js. I have worked on personal projects as a freelancer, which has allowed me to develop technical skills and gain practical experience. I also share my knowledge as a tutor in programming courses. I have knowledge in UX/UI Design, which provides me a deep comprehension of user experience and visual aesthetics. I am a creative, committed and highly dynamic person. If you want to learn more about my work experience or technical skills, I invite you to look through my portfolio or contact me directly.", 
     myProjects: "My projects",
     realP: "Real Project",
     fictionP: "Fiction Project",
