@@ -3,6 +3,35 @@
 #projects {
     margin-bottom: 9.5em;
 
+    .projects-title {
+        
+        h3 {
+            color: $color-accent;
+            font-size: 1.125em;
+            letter-spacing: .065em;
+            padding: .25em 8em;
+            text-align: center;
+            text-transform: uppercase;
+    
+            &:hover {
+                color: $color-accent2;
+                cursor: pointer;
+            }
+
+            &.subAccent {
+                color: $color-accent2;
+                font-size: 1.25em;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 1em;
+
+                &.subAccent {
+                    font-size: 1.125em;
+                }
+            }
+        }
+    }
     @media (max-width: 992px) {
         margin-bottom: 7.5em;
     }
@@ -21,7 +50,7 @@
         @include flex-jAround;
         align-content: space-between;
         flex-wrap: wrap;
-        margin: 4.75em 7em 3em 7em;
+        margin: 3em 7em;
 
         @media (max-width: 992px) {
             margin: 3.5em;

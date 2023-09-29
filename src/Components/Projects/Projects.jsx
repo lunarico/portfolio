@@ -1,12 +1,16 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import LanguageContext from '../../Context/LanguageContext';
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import flyAndBuy from "../../assets/projects/flyAndBuy.png"
 import indigoClima from "../../assets/projects/indigoClima.png"
 import katmandu from "../../assets/projects/katmandu.png"
 import miComunicacion from "../../assets/projects/miComunicacion.png"
+import availa from "../../assets/projects/availa.png"
+import { EventAvailableRounded } from '@mui/icons-material';
+
+import {ProjectDetail} from './ProjectDetail'
 
 export const Projects = () => {
 
@@ -16,8 +20,11 @@ export const Projects = () => {
         AOS.init({ offset: 200 });
       }, []);
 
+    const [subtitle, setSubtitle] = useState(true)
+ 
+    console.log(subtitle)
 
-    const slides =  [
+    const devProjects =  [
 
         {title: 'Fly and Buy',
         type: trans.realP,
@@ -48,24 +55,32 @@ export const Projects = () => {
         id: 4}
     ]
 
+    const desProjects = [
+        {title: 'Availa',
+        type: trans.fictionP,
+        description: trans.projectDescriptionAv,
+        link: 'https://www.behance.net/gallery/180947207/Availa-Proyecto-Final-Diseno-UXUI',
+        image: availa,
+        id: 5}
+    ]
+
   return (
 
     <section id="projects">
         <h2>{trans.myProjects}</h2>
+        <div className="projects-title">
+            <h3 onClick={() => setSubtitle(true)} className={subtitle ? 'subAccent' : ''}>{trans.developer}</h3>
+            <h3 onClick={() => setSubtitle(false)} className={!subtitle ? 'subAccent' : ''}>{trans.designer}</h3>
+        </div>
         <div className="cards-container">
-            {slides.map ((slide) =>
-                <div className="project-card" data-aos="zoom-in">
-                    <img src={slide.image} alt={slide.title}/>
-                    <div className="cardHover">
-                        <h3>{slide.title}</h3>
-                        <h4>{slide.type}</h4>
-                        <p>{slide.description}</p>
-                        <button>
-                            <a href={slide.link} target='_blank'>{trans.visit}</a>
-                        </button>
-                    </div>
-                </div>
-            )}
+            {subtitle ? (
+                devProjects.map ((props) =>
+                <ProjectDetail project={props} />
+            )) : (
+                desProjects.map ((props) =>
+                <ProjectDetail project={props} />
+            ))
+        }
         </div> 
     </section>
   );
